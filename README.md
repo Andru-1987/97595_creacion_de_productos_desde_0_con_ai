@@ -218,3 +218,6 @@ Crea archivos de reglas para las herramientas de IA:
 El vibe coding no se trata solo de usar herramientas de IA, sino de desarrollar un enfoque metodológico que combine pensamiento estructurado, buenas prácticas de desarrollo y aprovechamiento inteligente de la tecnología disponible.
 
 **El verdadero desafío no es solo construir, sino construir lo correcto de la manera correcta.**
+
+
+## Repositorio a trabajar en la cursada: *[SpaceDesk](https://github.com/Andru-1987/spacedesk_97595.git)*
