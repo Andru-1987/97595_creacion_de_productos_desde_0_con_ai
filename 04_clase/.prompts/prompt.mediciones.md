@@ -2,7 +2,6 @@
 *Requisitos previos:*
 
 - Tu backend ya tiene las tablas, RLS y Edge Function `validate-booking` (Sprints 1–6).
-- El frontend está en Next.js 14 con Zustand, shadcn/ui y cliente de Supabase.
 - Cuentas gratuitas en los servicios que elijas: **PostHog** o **Better Stack** (analytics), **Loops** o **Resend** (mensajería).
 
 ---
@@ -13,13 +12,7 @@
 
 ```prompt
 
-@file:src/lib/supabaseClient.ts 
-@file:src/app/t/[tenantSlug]/dashboard/page.tsx 
-@file:src/app/t/[tenantSlug]/reservas/page.tsx 
-@file:src/app/t/[tenantSlug]/facturacion/page.tsx 
-@file:src/app/t/[tenantSlug]/portal/page.tsx
-
-Instala PostHog (o Better Stack) en el proyecto Next.js.
+Instala PostHog (o Better Stack) en el proyecto.
 
 Crea un servicio `src/lib/analytics.ts` que exporte funciones para registrar eventos:
 - `trackEvent(eventName: string, properties?: object)`
@@ -43,8 +36,6 @@ Asegura que no se disparen eventos duplicados (idempotencia del lado del cliente
 **Objetivo:** Enviar correos automáticos (bienvenida, confirmación de reserva) usando un servicio SaaS externo.
 
 ```prompt
-@file:supabase/functions/send-email/index.ts 
-@file:src/app/api/webhooks/supabase/route.ts
 
 Investiga la documentación de **Loops** o **Resend** y crea una cuenta gratuita.
 
@@ -96,9 +87,6 @@ Escribe el código Mermaid y una breve explicación del flujo.
 **Objetivo:** Cumplir con requisitos legales básicos (GDPR / CCPA).
 
 ```prompt
-@file:src/app/t/[tenantSlug]/portal/page.tsx 
-@file:src/components/auth/LoginForm.tsx
-
 Agrega en el formulario de login y en la página del portal del miembro un enlace a una nueva página `/privacy`.
 
 Crea `src/app/privacy/page.tsx` con una **Nota de privacidad** que incluya:
@@ -116,7 +104,7 @@ Implementa que si el usuario no acepta, no pueda iniciar sesión (muestra un toa
 ---
 
 ### Prompt 5 – Checklist final y validación
-
+>! Solamente si se tiene ganas de hacer una pasada con las validaciones para este codigo en general 
 **Objetivo:** Verificar que todos los puntos de la clase están cubiertos.
 
 ```prompt
