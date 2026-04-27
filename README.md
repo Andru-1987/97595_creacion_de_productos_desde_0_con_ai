@@ -188,9 +188,9 @@ Crea archivos de reglas para las herramientas de IA:
 - Limit code changes to the minimum necessary
 - Enable rate limiting on all API endpoints
 - Add captchas to sign-up pages
-- Follow established code patterns
 
 **Don'ts:**
+- Follow established code patterns
 - Don't remove existing functionality without confirmation
 - Don't change file structures without approval
 - Don't bypass security measures
